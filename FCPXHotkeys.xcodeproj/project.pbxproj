@@ -11,6 +11,9 @@
 		0F7D3C241E78A54300E75412 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D3C231E78A54300E75412 /* ViewController.swift */; };
 		0F7D3C261E78A54300E75412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F7D3C251E78A54300E75412 /* Assets.xcassets */; };
 		0F7D3C291E78A54300E75412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F7D3C271E78A54300E75412 /* Main.storyboard */; };
+		0F7D3C371E78A58600E75412 /* DDHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D3C321E78A58600E75412 /* DDHotKeyCenter.m */; };
+		0F7D3C381E78A58600E75412 /* DDHotKeyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D3C341E78A58600E75412 /* DDHotKeyTextField.m */; };
+		0F7D3C391E78A58600E75412 /* DDHotKeyUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D3C361E78A58600E75412 /* DDHotKeyUtilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,13 @@
 		0F7D3C251E78A54300E75412 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F7D3C281E78A54300E75412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F7D3C2A1E78A54300E75412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F7D3C301E78A58500E75412 /* FCPXHotkeys-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FCPXHotkeys-Bridging-Header.h"; sourceTree = "<group>"; };
+		0F7D3C311E78A58600E75412 /* DDHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHotKeyCenter.h; path = DDHotkey/DDHotKeyCenter.h; sourceTree = "<group>"; };
+		0F7D3C321E78A58600E75412 /* DDHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHotKeyCenter.m; path = DDHotkey/DDHotKeyCenter.m; sourceTree = "<group>"; };
+		0F7D3C331E78A58600E75412 /* DDHotKeyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHotKeyTextField.h; path = DDHotkey/DDHotKeyTextField.h; sourceTree = "<group>"; };
+		0F7D3C341E78A58600E75412 /* DDHotKeyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHotKeyTextField.m; path = DDHotkey/DDHotKeyTextField.m; sourceTree = "<group>"; };
+		0F7D3C351E78A58600E75412 /* DDHotKeyUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHotKeyUtilities.h; path = DDHotkey/DDHotKeyUtilities.h; sourceTree = "<group>"; };
+		0F7D3C361E78A58600E75412 /* DDHotKeyUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHotKeyUtilities.m; path = DDHotkey/DDHotKeyUtilities.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +67,23 @@
 				0F7D3C251E78A54300E75412 /* Assets.xcassets */,
 				0F7D3C271E78A54300E75412 /* Main.storyboard */,
 				0F7D3C2A1E78A54300E75412 /* Info.plist */,
+				0F7D3C3A1E78A59900E75412 /* DDHotkey */,
+				0F7D3C301E78A58500E75412 /* FCPXHotkeys-Bridging-Header.h */,
 			);
 			path = FCPXHotkeys;
+			sourceTree = "<group>";
+		};
+		0F7D3C3A1E78A59900E75412 /* DDHotkey */ = {
+			isa = PBXGroup;
+			children = (
+				0F7D3C311E78A58600E75412 /* DDHotKeyCenter.h */,
+				0F7D3C321E78A58600E75412 /* DDHotKeyCenter.m */,
+				0F7D3C331E78A58600E75412 /* DDHotKeyTextField.h */,
+				0F7D3C341E78A58600E75412 /* DDHotKeyTextField.m */,
+				0F7D3C351E78A58600E75412 /* DDHotKeyUtilities.h */,
+				0F7D3C361E78A58600E75412 /* DDHotKeyUtilities.m */,
+			);
+			name = DDHotkey;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +118,7 @@
 				TargetAttributes = {
 					0F7D3C1D1E78A54300E75412 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -133,7 +159,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F7D3C241E78A54300E75412 /* ViewController.swift in Sources */,
+				0F7D3C371E78A58600E75412 /* DDHotKeyCenter.m in Sources */,
+				0F7D3C391E78A58600E75412 /* DDHotKeyUtilities.m in Sources */,
 				0F7D3C221E78A54300E75412 /* AppDelegate.swift in Sources */,
+				0F7D3C381E78A58600E75412 /* DDHotKeyTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,11 +274,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = FCPXHotkeys/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tim.d.nelson.FCPXHotkeys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FCPXHotkeys/FCPXHotkeys-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -258,11 +290,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = FCPXHotkeys/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tim.d.nelson.FCPXHotkeys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FCPXHotkeys/FCPXHotkeys-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
